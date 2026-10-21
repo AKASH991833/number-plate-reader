@@ -26,6 +26,10 @@ Read vehicle number plates from a photo — entirely in your browser. Drop in a 
 - Clean, straight, close-up photos read well; blurry, angled, dirty or stylized plates can misread — always sanity-check the result.
 - It cannot (and does not try to) identify owners or vehicles. Use it for lawful personal purposes only.
 
+## Stack
+
+Vanilla HTML/CSS/JS + [Tesseract.js](https://tesseract.projectnaptha.com/) 5 (WASM OCR, runs fully on-device). Canvas preprocessing (grayscale, contrast boost, thresholding) cleans the plate region before OCR. No build step, no server. Free on GitHub Pages.
+
 ## Screenshots
 
 | Desktop (light) | Desktop (dark) | Mobile |
